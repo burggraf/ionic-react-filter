@@ -16,7 +16,7 @@ import { UtilsService } from './services/utils.service';
 import './Filter.css';
 var initialized = false;
 var utils = new UtilsService();
-var Filter = function (_a) {
+export var Filter = function (_a) {
     var filterData = _a.filterData, callback = _a.callback /*, closeFunction */;
     var _b = useState(filterData), data = _b[0], setData = _b[1];
     var rawData = __assign({}, filterData);
@@ -146,4 +146,3 @@ var Filter = function (_a) {
                 }
             }) }), void 0) }, void 0));
 };
-export default Filter;

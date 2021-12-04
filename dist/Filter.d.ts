@@ -5,5 +5,5 @@ interface ContainerProps {
     callback: Function;
     closeFunction: Function;
 }
-declare const Filter: React.FC<ContainerProps>;
-export default Filter;
+export declare const Filter: React.FC<ContainerProps>;
+export {};

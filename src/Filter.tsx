@@ -13,7 +13,7 @@ interface ContainerProps {
 let initialized = false
 const utils = new UtilsService()
 
-const Filter: React.FC<ContainerProps> = ({ filterData, callback/*, closeFunction */ }) => {
+export const Filter: React.FC<ContainerProps> = ({ filterData, callback/*, closeFunction */ }) => {
 	const [data, setData] = useState<object>(filterData)
 	const rawData: object = { ...filterData }
 
@@ -241,4 +241,4 @@ const Filter: React.FC<ContainerProps> = ({ filterData, callback/*, closeFunctio
 	)
 }
 
-export default Filter
+// export default Filter
