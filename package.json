@@ -1,8 +1,8 @@
 {
-  "name": "ionic-react-component-template",
+  "name": "ionic-react-filter",
   "version": "1.0.0",
-  "description": "Template component for publishing Ionic React Functional Components to npm",
-  "homepage": "https://github.com/burggraf/ionic-react-component-template",
+  "description": "Ionic React Filter Component -- a data-driven form for collecting data used to filter a dataset",
+  "homepage": "https://github.com/burggraf/ionic-react-filter",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
@@ -27,6 +27,7 @@
   ],
   "dependencies": {
     "@ionic/react": "^5.9.1",
-    "ionicons": "^6.0.0"
+    "ionicons": "^6.0.0",
+    "moment": "^2.29.1"
   }
 }
