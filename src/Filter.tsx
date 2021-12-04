@@ -13,13 +13,13 @@ interface ContainerProps {
 let initialized = false
 const utils = new UtilsService()
 
-const Filter: React.FC<ContainerProps> = ({ filterData, callback, closeFunction }) => {
+const Filter: React.FC<ContainerProps> = ({ filterData, callback/*, closeFunction */ }) => {
 	const [data, setData] = useState<object>(filterData)
 	const rawData: object = { ...filterData }
 
-	const closeMe = () => {
-		closeFunction()
-	}
+	// const closeMe = () => {
+	// 	closeFunction()
+	// }
 
 	useEffect(() => {
 		// console.log('(((((((((((((((((((((((((((((((');
@@ -36,7 +36,7 @@ const Filter: React.FC<ContainerProps> = ({ filterData, callback, closeFunction 
 		// SET DEFAULT VALUES
 		const newData: any = { ...data }
 		{
-			Object.keys(data).map((key: any, index: number) => {
+			Object.keys(data).map((key: any/*, index: number*/) => {
 				const item = (data as any)[key]
 				switch (item.type) {
 					case 'checkbox':
@@ -66,7 +66,8 @@ const Filter: React.FC<ContainerProps> = ({ filterData, callback, closeFunction 
 			setData(newData)
 			initialized = true
 		}, 1000)
-	}, [])
+	}, []);
+
 
 	const handleChange = (e: any) => {
 		const name = /*e.target.attributes.name?.value ||*/ e.target.id
@@ -114,7 +115,7 @@ const Filter: React.FC<ContainerProps> = ({ filterData, callback, closeFunction 
 
 		return false
 	}
-	const closeFilter = () => {}
+	// const closeFilter = () => {}
 	return (
 		<>
 			<div className='filter-container'>
