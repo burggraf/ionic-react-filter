@@ -1,0 +1,17 @@
+.filter-container {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    justify-content: left;
+
+    /* flex-wrap: wrap; */
+    /* border: 1px solid; */
+    /* margin-right: 20px;
+    margin-left: 20px; */
+}
+.filter-child {
+    margin: 2% 5% 2%
+}  
